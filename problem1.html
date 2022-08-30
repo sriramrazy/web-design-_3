@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parallax Website Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-size: 16px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      line-height: 1.7em;
+      color: #666;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+      position: relative;
+      opacity: 0.65;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+      background-attachment: fixed;
+    }
+
+    .pic1 {
+      background-image: url('/image1.png');
+      min-height: 100%;
+    }
+
+    .pic2 {
+      background-image: url('/image2.png');
+      min-height: 400px;
+    }
+
+    .pic3 {
+      background-image: url('/image3.png');
+      min-height: 400px;
+    }
+
+    .section {
+      text-align: center;
+      padding: 50px 80px;
+    }
+
+    .section-light {
+      background-color: #f4f4f4;
+      color: #666;
+    }
+
+    .section-dark {
+      background-color: #282e34;
+      color: #ddd;
+    }
+
+    .card {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      font-size: 27px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .card .border {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .card .test .trans {
+      background-color: transparent;
+    }
+
+    @media(max-width:568px) {
+
+      .pic1,
+      .pic2,
+      .pic3 {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pic1">
+    <div class="card">
+      <span class="test">
+        Parallax Website
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>Section One</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi,
+      fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
+      praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
+      inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat
+      dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat
+      quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
+    </p>
+  </section>
+
+  <div class="pic2">
+    <div class="card trans">
+      <span class="test">
+        This is image two text.
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Two</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi,
+      fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum.
+    </p>
+  </section>
+
+  <div class="pic3">
+    <div class="card">
+      <span class="test trans">
+        Image Three Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Three</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi,
+      fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum.
+    </p>
+  </section>
+
+  <div class="pic1">
+    <div class="card">
+      <span class="test">
+        This is image three text
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
